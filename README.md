@@ -1,5 +1,5 @@
-# Phishing Lab
-**Objective:** Understand phishing attacks and mitigation
-**Tools:** Email simulations, security lab environment
-**Steps:** Conducted simulated phishing campaigns and analyzed responses
-**Lessons Learned:** Recognize phishing patterns and prevention strategies
+# Digital Forensics Lab
+**Objective:** Learn basic forensic analysis techniques
+**Tools:** Autopsy, FTK Imager
+**Steps:** Analyzed disk images, recovered deleted files
+**Lessons Learned:** Understand file recovery and forensic reporting
