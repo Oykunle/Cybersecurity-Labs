@@ -1,17 +1,16 @@
-# Linux Lab
+# Kali Linux Lab
 
 ## Objective
-Learn basic Linux commands and environment setup for cybersecurity tasks.
+Learn basic Kali Linux commands and environment setup for penetration testing and cybersecurity tasks.
 
 ## Tools
-- Ubuntu/Kali Linux terminal
+- Kali Linux virtual machine / terminal
 
 ## Commands / Steps Practiced
 
 1. **pwd** – Print working directory  
 ```bash
 pwd
-```
 Shows the current folder you are working in.
 
 2. **ls -l** – List files with details (permissions, owner, size, etc.)  
