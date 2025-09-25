@@ -58,12 +58,12 @@ Prints the content of a file.
 **==================================================================**
 
 
-##Directory Permissions Lab
+## Directory Permissions Lab
 
-##Objective
+## Objective
 Learn how to manage directories and their permissions in Linux.
 
-##Commands / Steps Practiced
+## Commands / Steps Practiced
 
 1. **mkdir** – Create a new directory  
 ```bash
@@ -104,13 +104,13 @@ Confirm the new permissions and ownership.
 **==================================================================**
 
 
-##File Ownership and User Permissions Lab
+## File Ownership and User Permissions Lab
 
-##Objective
+## Objective
 
 Learn how to manage file ownership and user/group permissions in Linux.
 
-##Commands / Steps Practiced
+## Commands / Steps Practiced
 
 
 1. **ls -l** – View file details including ownership
@@ -137,10 +137,10 @@ sudo chgrp staff notes.txt
 ```
 Changes the group of notes.txt to staff without affecting the owner.
 
-Reflection (What I Learned)
-	-	Learned how to view file ownership in Linux.
-	-	Understood the difference between user and group ownership.
-	-	Practiced changing file ownership and verifying the changes.
+## Reflection (What I Learned)
+- Learned how to view file ownership in Linux.
+- Understood the difference between user and group ownership.
+- Practiced changing file ownership and verifying the changes.
 
 
 
@@ -148,17 +148,17 @@ Reflection (What I Learned)
 
 
 
-##File Editing & Text Manipulation Lab
+## File Editing & Text Manipulation Lab
 
-##Objective
+## Objective
 
 Learn how to view, create, edit, and manage files in Linux using command-line editors and text manipulation commands.
 
-##Tools
+## Tools
 	•	Ubuntu/Kali Linux terminal
 	•	Text editors: nano, vim
 
-##Commands / Steps Practiced
+## Commands / Steps Practiced
 
 
 1. **nano** – Edit a file
@@ -209,7 +209,7 @@ rm notes_old.txt
 ```
 Removes the specified file.
 
-Reflection (What I Learned)
-	- Learned how to edit files using nano and vim.
-	- Practiced viewing file content with head, tail, and cat.
-	- Understood file operations like copy, move, and delete.
+## Reflection (What I Learned)
+- Learned how to edit files using nano and vim.
+- Practiced viewing file content with head, tail, and cat.
+- Understood file operations like copy, move, and delete.
