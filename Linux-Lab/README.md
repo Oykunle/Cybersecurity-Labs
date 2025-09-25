@@ -54,7 +54,11 @@ Prints the content of a file.
 - Learned how to navigate the Linux file system.  
 - Understood file and folder permissions.  
 - Practiced creating and managing files/folders in the terminal.
+
+  
 ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 ## Directory Permissions Lab
 
@@ -69,25 +73,25 @@ mkdir lab-test
 ```
 Creates a new folder called lab-test.
 
-2. **ls -ld – View directory permissions
+2. **ls -ld** – View directory permissions
 ```bash
 ls -ld lab-test
 ```
 Displays the directory details and permissions.
 
-3. **chmod 750 – Change directory permissions  
+3. **chmod 750** – Change directory permissions  
 ```bash
 sudo chmod 750 lab-test
 ```
 Sets: Owner = read/write/execute, Group = read/execute, Others = no access.
 
-4. **chown – Change owner and group 
+4. **chown** – Change owner and group 
 ```bash
 sudo chown kali:staff lab-test
 ```
 Sets kali as owner and staff as the group.
 
-5. **ls -ld – Verify changes 
+5. **ls -ld** – Verify changes 
 ```bash
 ls -ld lab-test
 ```
