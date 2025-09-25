@@ -1,5 +1,11 @@
 # Cybersecurity Labs Portfolio
 
+![GitHub Repo Size](https://img.shields.io/github/repo-size/Oykunle/Cybersecurity-Labs)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/Oykunle/Cybersecurity-Labs)
+![GitHub Stars](https://img.shields.io/github/stars/Oykunle/Cybersecurity-Labs?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/Oykunle/Cybersecurity-Labs)
+![GitHub License](https://img.shields.io/github/license/Oykunle/Cybersecurity-Labs)
+
 Welcome to my Cybersecurity Labs repository! This repository contains five practical lab projects designed to strengthen skills in digital forensics, Linux, network scanning, phishing awareness, and packet analysis.
 
 ---
