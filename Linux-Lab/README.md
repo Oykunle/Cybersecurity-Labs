@@ -58,6 +58,8 @@ Prints the content of a file.
   
 
 
+-------------------------------------------------------------------------------------
+
 
 
 ## Directory Permissions Lab
