@@ -56,7 +56,7 @@ Prints the content of a file.
 - Practiced creating and managing files/folders in the terminal.
 
   
----------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
