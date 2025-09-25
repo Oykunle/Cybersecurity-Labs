@@ -55,7 +55,7 @@ Prints the content of a file.
 - Understood file and folder permissions.  
 - Practiced creating and managing files/folders in the terminal.
 
-
+**================================================================================**
 
 
 Directory Permissions Lab
@@ -101,6 +101,7 @@ Confirm the new permissions and ownership.
 - Practiced changing ownership and verifying permissions.
 
 
+**================================================================================**
 
 
 File Ownership and User Permissions Lab
