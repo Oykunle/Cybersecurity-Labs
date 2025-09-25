@@ -1,5 +1,5 @@
-# Linux Lab
-**Objective:** Learn basic Linux commands and environment
-**Tools:** Ubuntu/Kali Linux terminal
-**Steps:** Practiced navigation, file management, and permissions
-**Lessons Learned:** Basic Linux proficiency for cybersecurity tasks
+# Nmap Lab
+**Objective:** Learn network scanning and host discovery
+**Tools:** Nmap
+**Steps:** Scanned local VM networks and identified open ports
+**Lessons Learned:** Understand host discovery and service enumeration
