@@ -1,5 +1,5 @@
-# Nmap Lab
-**Objective:** Learn network scanning and host discovery
-**Tools:** Nmap
-**Steps:** Scanned local VM networks and identified open ports
-**Lessons Learned:** Understand host discovery and service enumeration
+# Phishing Lab
+**Objective:** Understand phishing attacks and mitigation
+**Tools:** Email simulations, security lab environment
+**Steps:** Conducted simulated phishing campaigns and analyzed responses
+**Lessons Learned:** Recognize phishing patterns and prevention strategies
