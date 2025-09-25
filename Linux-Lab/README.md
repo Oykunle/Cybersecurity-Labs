@@ -1,10 +1,10 @@
-# Kali Linux Lab
+# Linux Lab
 
 ## Objective
-Learn basic Kali Linux commands and environment setup for penetration testing and cybersecurity tasks.
+Learn basic Linux commands and environment setup for cybersecurity tasks.
 
 ## Tools
-- Kali Linux virtual machine / terminal
+- Ubuntu/Kali Linux terminal
 
 ## Commands / Steps Practiced
 
