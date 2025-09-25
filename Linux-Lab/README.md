@@ -11,6 +11,7 @@ Learn basic Linux commands and environment setup for cybersecurity tasks.
 1. **pwd** – Print working directory  
 ```bash
 pwd
+```
 Shows the current folder you are working in.
 
 2. **ls -l** – List files with details (permissions, owner, size, etc.)  
@@ -65,6 +66,7 @@ Learn how to manage directories and their permissions in Linux.
 1. **mkdir** – Create a new directory  
 ```bash
 mkdir lab-test
+```
 Creates a new folder called lab-test.
 
 2. **ls -ld – View directory permissions
@@ -91,8 +93,8 @@ ls -ld lab-test
 ```
 Confirm the new permissions and ownership.
 
-Reflection (What I Learned)
-	•	Learned how to create directories in Linux.
-	•	Understood directory permission levels (read, write, execute).
-	•	Practiced changing ownership and verifying permissions.
+## Reflection (What I Learned)
+- Learned how to create directories in Linux.
+- Understood directory permission levels (read, write, execute).
+- Practiced changing ownership and verifying permissions.
 
