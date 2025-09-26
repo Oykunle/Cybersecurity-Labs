@@ -152,7 +152,9 @@ Changes the group of notes.txt to staff without affecting the owner.
 
 ## Objective
 
-Learn how to view, create, edit, and manage files in Linux using command-line editors and text manipulation commands.
+Learn how to view, create, edit, 
+and manage files in Linux using command-line
+editors and text manipulation commands.
 
 ## Tools
 	•	Ubuntu/Kali Linux terminal
@@ -224,7 +226,9 @@ Removes the specified file.
 
 ## Objective
 
-Learn how to view, manage, and control processes in Linux, including monitoring resource usage, stopping processes, and adjusting their priority.
+Learn how to view, manage, and control processes in Linux, 
+including monitoring resource usage, stopping processes, 
+and adjusting their priority.
 
 ## Commands / Steps Practiced
 
@@ -292,7 +296,8 @@ Range: -20 (highest priority) to 19 (lowest).
 
 ## Objective
 
-Learn how to search for files, directories, and content inside files using Linux commands.
+Learn how to search for files, directories, 
+and content inside files using Linux commands.
 
 ## Commands / Steps Practiced
 
@@ -330,10 +335,91 @@ Shows the full path of the command/program (e.g., /usr/bin/python3).
 ```bash
 whereis ls
 ```
-Finds where the binary, source code, and man pages of ls are stored.
+Finds where the binary, source code, 
+and man pages of ls are stored.
 
 ## Reflection (What I Learned)
 - Learned how to search files and directories using find and locate.
 - Understood how to search inside files with grep.
 - Practiced locating executables with which and whereis.
 - Gained skills for troubleshooting and finding system resources.
+
+
+
+**==================================================================**
+
+
+
+## Networking Basics in Linux
+
+## Objective
+
+Learn how to check network configurations, 
+test connectivity, resolve domain names, 
+trace network routes, and list open ports in Linux.
+
+## Commands / Steps Practiced
+
+
+1. **ip addr** – Show network interfaces and IP addresses
+```bash
+ip addr
+```
+Displays details of all network interfaces, 
+IP addresses (IPv4 & IPv6), 
+and MAC addresses.
+
+2. **ping** – Test connectivity to another host
+```bash
+ping -c 5 facebook.com
+```
+Sends ICMP echo requests. Helps verify if a host/domain is reachable and measures response time.
+
+3. **nslookup** – Query DNS records
+```bash
+nslookup facebook.com
+```
+Checks domain-to-IP mapping using DNS servers. 
+Useful for troubleshooting name resolution.
+
+4. **traceroute** –  Trace the path packets take to reach a destination
+```bash
+traceroute google.com
+```
+Shows each hop (router) between my computer and the target. 
+Helps identify delays or failures in the network path.
+
+5. **ss -tuln** – Show active network sockets
+```bash
+ss -tuln
+```
+Lists listening TCP/UDP ports and their associated IP addresses. 
+Useful for checking open services and potential vulnerabilities.
+
+## Reflection (What I Learned)
+- Understood how to view IP addresses and interfaces with ip addr.
+-  Learned to use ping for checking connectivity and latency.
+- Practiced resolving domains with nslookup.
+- Saw how traceroute maps out the journey of packets.
+- Checked open ports with ss, important for system administration and security monitoring.
+
+### Networking Checks (example outputs)
+
+**Main interface**
+- eth0 — 192.168.64.2/24 (from `ip addr`)
+
+**Connectivity / Latency**
+- `ping -c 5 facebook.com` → avg latency ~27.9 ms, 0% packet loss
+- `ping -c 5 youtube.com` → avg latency ~31.9 ms, 0% packet loss
+
+**DNS**
+- `nslookup facebook.com` → Server: 192.168.64.1 (resolver), resolves to public IP(s)
+
+**Path to Google**
+- `traceroute google.com` → shows local gateway 192.168.64.1 then ISP hops and final Google hops (~25–30 ms)
+
+**Open/listening services**
+- `ss -tuln` shows:
+  - SSH listening on `0.0.0.0:22` (network-accessible)
+  - PostgreSQL (or DB) listening on `127.0.0.1:5432`, `127.0.0.1:5433` (local only)
+  - Docker bridge `172.17.0.1/16` present
