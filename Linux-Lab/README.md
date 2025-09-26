@@ -213,3 +213,71 @@ Removes the specified file.
 - Learned how to edit files using nano and vim.
 - Practiced viewing file content with head, tail, and cat.
 - Understood file operations like copy, move, and delete.
+
+
+
+**==================================================================**
+
+
+
+## Process Management in Linux
+
+## Objective
+
+Learn how to view, manage, and control processes in Linux, including monitoring resource usage, stopping processes, and adjusting their priority.
+
+## Commands / Steps Practiced
+
+
+1. **ps** – Show running processes
+```bash
+ps
+ps aux
+```
+Displays current processes.
+ps → shows your shell processes.
+ps aux → shows all running processes with details (user, PID, CPU, memory).
+
+2. **top** – live view processess
+```bash
+top
+```
+Displays processes dynamically with CPU/memory usage.
+Press q to quit.
+
+3. **kill** – Terminate a process
+```bash
+kill <PID>
+kill -9 <PID>
+```
+Stops a process using its Process ID (PID).
+-9 forces termination.
+
+4. **jobs, fg, bg** –  Manage background/foreground jobs
+```bash
+sleep 100 &
+jobs
+fg %1
+bg %1
+```
+& → runs a process in the background.
+jobs → shows active jobs in the shell.
+fg %1 → brings job 1 to foreground.
+bg %1 → resumes job 1 in background.
+
+5. **nice / renice** – Adjust process priority
+```bash
+nice -n 10 command
+renice -n -5 -p <PID>
+```
+nice → starts a command with a given priority.
+renice → changes priority of an existing process.
+Range: -20 (highest priority) to 19 (lowest).
+
+
+
+## Reflection (What I Learned)
+- Learned how to find and monitor running processes.
+- Understood how to kill or stop misbehaving applications.
+- Practiced moving jobs between background and foreground.
+- Learned to adjust process priority for better system performance.
