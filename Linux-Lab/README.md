@@ -281,3 +281,59 @@ Range: -20 (highest priority) to 19 (lowest).
 - Understood how to kill or stop misbehaving applications.
 - Practiced moving jobs between background and foreground.
 - Learned to adjust process priority for better system performance.
+
+
+
+**==================================================================**
+
+
+
+## File Searching & Finding in Linux
+
+## Objective
+
+Learn how to search for files, directories, and content inside files using Linux commands.
+
+## Commands / Steps Practiced
+
+
+1. **find** – search for files and directories
+```bash
+find /home -name notes.txt
+find . -type d -name "lab*"
+```
+Finds a file named notes.txt in /home.
+Finds directories starting with lab in the current directory.
+
+2. **locate** – Quickly search using file database
+```bash
+locate notes.txt
+```
+Faster than find because it searches a prebuilt database.
+Run sudo updatedb to refresh the database.
+
+3. **grep** – Search inside files for text patterns
+```bash
+grep "Linux" notes.txt
+grep -r "password" /etc/
+```
+Searches for the word Linux in notes.txt.
+Recursively searches for password in /etc/.
+
+4. **which** –  Locate executable file path
+```bash
+which python3
+```
+Shows the full path of the command/program (e.g., /usr/bin/python3).
+
+5. **whereis** – Locate binaries, source, and manual pages
+```bash
+whereis ls
+```
+Finds where the binary, source code, and man pages of ls are stored.
+
+## Reflection (What I Learned)
+- Learned how to search files and directories using find and locate.
+- Understood how to search inside files with grep.
+- Practiced locating executables with which and whereis.
+- Gained skills for troubleshooting and finding system resources.
