@@ -486,3 +486,62 @@ echo "Second argument: $2"
 - Learned how to write and execute basic Bash scripts.
 - Understood how to pass arguments to scripts.
 - Practiced automating tasks with simple scripts.
+
+
+**==================================================================**
+
+
+
+## Basic Firewall & Security Tools
+
+## Objective
+
+Learn how to configure and use firewall & security tools in Linux to 
+control network traffic and protect against brute-force attacks.
+
+## Tools
+. Ubuntu/Kali Linux terminal
+. ufw (Uncomplicated Firewall)
+. iptables
+. fail2ban
+
+
+## Commands / Steps Practiced
+
+
+1. ## ufw (Uncomplicated Firewall)
+```bash
+sudo ufw enable              # Enable firewall
+sudo ufw disable             # Disable firewall
+sudo ufw status              # Check firewall status
+sudo ufw allow 22/tcp        # Allow SSH (port 22)
+sudo ufw deny 80/tcp         # Block HTTP (port 80)
+sudo ufw delete allow 22/tcp # Remove SSH allow rule
+```
+for quick firewall setup.
+
+2. ## iptables basics
+```bash
+sudo iptables -L                                # List all current rules
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT   # Allow SSH (port 22)
+sudo iptables -A INPUT -p tcp --dport 80 -j DROP     # Block HTTP (port 80)
+sudo iptables -D INPUT 1                         # Delete rule #1
+```
+More powerful, gives fine-grained control over packets.
+
+
+3. ## fail2ban
+```bash
+sudo apt install fail2ban -y     # Install fail2ban
+sudo systemctl enable fail2ban   # Enable at boot
+sudo systemctl start fail2ban    # Start service
+sudo fail2ban-client status      # Check fail2ban status
+```
+Protects against brute-force attacks by banning suspicious IPs.
+
+
+## Reflection (What I Learned)
+- Learned how to enable and configure a firewall using ufw.
+- Understood iptables rules for fine-grained control of network traffic.
+- Practiced using fail2ban to protect against repeated failed logins.
+- Gained knowledge of basic security tools essential for cybersecurity defense.
