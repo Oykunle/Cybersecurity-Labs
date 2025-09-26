@@ -423,3 +423,66 @@ Useful for checking open services and potential vulnerabilities.
   - SSH listening on `0.0.0.0:22` (network-accessible)
   - PostgreSQL (or DB) listening on `127.0.0.1:5432`, `127.0.0.1:5433` (local only)
   - Docker bridge `172.17.0.1/16` present
+
+
+**==================================================================**
+
+
+
+## Basic Shell Scripting Lab
+
+## Objective
+
+Learn how to create and run simple Bash scripts to automate tasks in Linux.
+
+Tools
+	•	Ubuntu/Kali Linux terminal
+	•	Nano (or any text editor)
+	•	Bash shell
+
+Key Concepts
+	1.	Bash Script – A text file containing a series of Linux commands executed in sequence.
+	2.	Shebang (#!/bin/bash) – First line of a script specifying the interpreter.
+	3.	Making a script executable – Using chmod +x filename.sh.
+	4.	Running a script – Using ./filename.sh.
+	5.	Arguments – Scripts can accept inputs like $1, $2 (first, second argument, etc.).
+	6.	Variables – Store values, e.g., name="Alice".
+	7.	Echo – Display text or variables: echo "Hello $name".
+
+
+## Commands / Steps Practiced
+
+
+1. ## Create a script using nano
+```bash
+nano hello.sh
+```
+This opens a text editor to write your script.
+
+2. ## 	Add a simple script
+```bash
+#!/bin/bash
+echo "Hello, World!"
+```
+
+3. ## Make the script executable
+```bash
+chmod +x hello.sh
+```
+
+4. ## Run the script
+```bash
+./hello.sh
+```
+
+5. ## Script with arguments
+```bash
+#!/bin/bash
+echo "First argument: $1"
+echo "Second argument: $2"
+```
+
+## Reflection (What I Learned)
+- Learned how to write and execute basic Bash scripts.
+- Understood how to pass arguments to scripts.
+- Practiced automating tasks with simple scripts.
